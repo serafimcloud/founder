@@ -1,12 +1,15 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import basicSsl from '@vitejs/plugin-basic-ssl';
+import { nodePolyfills } from 'vite-plugin-node-polyfills'
+import svgrPlugin from 'vite-plugin-svgr'
+import pluginChecker from 'vite-plugin-checker'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), basicSsl()],
-  build: {
-    outDir: './docs'
-  },
-  base: '/vite-boilerplate/'
-});
+  plugins: [
+    react(),
+    nodePolyfills(),
+    svgrPlugin(),
+    pluginChecker({ typescript: true }),
+  ],
+})
