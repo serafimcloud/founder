@@ -3,23 +3,23 @@ import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-600 to-blue-500 flex items-center justify-center">
-      <div className="bg-white p-8 rounded-lg shadow-2xl max-w-md w-full">
-        <h1 className="text-4xl font-bold mb-6 text-center text-gray-800">Добро пожаловать</h1>
-        <p className="text-gray-600 mb-8 text-center">Это простая домашняя страница вашего приложения.</p>
+    <div className="min-h-screen bg-bg_color flex items-center justify-center">
+      <div className="bg-section_bg_color p-8 rounded-lg shadow-2xl max-w-md w-full">
+        <h1 className="text-4xl font-bold mb-6 text-center text-accent_text_color">Welcome</h1>
+        <p className="text-subtitle_text_color mb-8 text-center">This is a simple home page for your application.</p>
         
         <nav className="mb-8">
           <ul className="space-y-4">
             {[
-              { to: "/token/trade", text: "Торговля токенами" },
-              { to: "/token/chart", text: "График токенов" },
-              { to: "/create", text: "Создать" },
-              { to: "/settings", text: "Настройки" },
+              { to: "/token/trade", text: "Token Trading" },
+              { to: "/token/chart", text: "Token Chart" },
+              { to: "/create", text: "Create" },
+              { to: "/settings", text: "Settings" },
             ].map((link) => (
               <li key={link.to}>
                 <Link 
                   to={link.to} 
-                  className="block w-full text-center py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300"
+                  className="block w-full text-center py-2 px-4 bg-button_color text-button_text_color rounded hover:opacity-90 transition duration-300"
                 >
                   {link.text}
                 </Link>
@@ -29,10 +29,10 @@ const Home: React.FC = () => {
         </nav>
         
         <button 
-          onClick={() => alert('Вы нажали кнопку!')}
-          className="w-full py-2 px-4 bg-purple-500 text-white rounded hover:bg-purple-600 transition duration-300"
+          onClick={() => alert('You clicked the button!')}
+          className="w-full py-2 px-4 bg-secondary_button_color text-text_color rounded hover:opacity-90 transition duration-300"
         >
-          Нажми меня
+          Click me
         </button>
       </div>
     </div>
