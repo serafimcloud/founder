@@ -5,7 +5,7 @@
   <br>
 </p>
 
-# Telegram Mini Apps(TMA) + React + TypeScript + Vite
+# Telegram Mini Apps(TMA) + React + TypeScript + Vite + TailwindCSS + React Router
 
 Vite (which means "fast" in French) is a front-end build tool and development server that aims to provide a faster and leaner development experience for modern web projects. We will utilise Vite to create Telegram Mini App example.
 
