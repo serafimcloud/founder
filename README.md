@@ -66,7 +66,6 @@ This template is configured for easy deployment to GitHub Pages. Simply push you
 
 - [Telegram Mini Apps Documentation](https://docs.ton.org/develop/dapps/twa)
 - [Example TMA](https://t.me/vite_twa_example_bot/app)
-- [Live Demo](https://twa-dev.github.io/vite-boilerplate/)
 
 ## Contributing
 
